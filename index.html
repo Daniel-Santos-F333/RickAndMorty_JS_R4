@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explorador Rick and Morty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Explorador Rick and Morty</h1>
+
+    <div class="filters">
+        <input type="text" id="name" placeholder="Buscar por nombre">
+
+        <select id="status">
+            <option value="">Estado</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+        </select>
+
+        <select id="species">
+            <option value="">Especie</option>
+            <option value="human">Human</option>
+            <option value="alien">Alien</option>
+        </select>
+
+        <button id="searchBtn">Buscar</button>
+        <button id="clearBtn">Limpiar</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="results" class="cards"></div>
+
+    <div class="pagination">
+        <button id="prevBtn">Anterior</button>
+        <span id="pageInfo"></span>
+        <button id="nextBtn">Siguiente</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
